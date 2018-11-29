@@ -1,14 +1,12 @@
 import React from "react";
 import styled from 'styled-components';
 
-const Wrapper = styled.button.attrs({
-    className: props => props.className,
-})`
-    color: ${props => props.theme.button.primaryColor} 
-    background-color: ${props => props.theme.button.primaryBackgroundColor} 
+const ThemedButton = styled.button`
+    color: ${props => props.theme.text.secondary} 
+    background-color: ${props => props.theme.button.primary} 
     
     &:hover {
-        background-color: ${props => props.theme.button.secondaryBackgroundColor} 
+        background-color: ${props => props.theme.button.secondary} 
     }
 `;
 
@@ -19,7 +17,9 @@ export class Button extends React.Component {
 
     render() {
         return (
-            <Wrapper className={this.props.className}>Search</Wrapper>
+            <ThemedButton className={this.props.className}>
+                {this.props.text}
+            </ThemedButton>
         );
     }
 }

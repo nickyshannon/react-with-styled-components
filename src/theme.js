@@ -1,28 +1,26 @@
 export const themes = {
     brand1: {
-        primaryColor: '#488bf8',
-        secondaryColor: '#8c69ca',
+        primary: '#1C89B7',
+        secondary: '#488bf8',
         text: {
-            primaryColor: '#ffffff',
+            primary: '#EEEEEE',
+            secondary: '#FFFFFF',
         },
         button: {
-            primaryColor: '#ffffff',
-            primaryBackgroundColor: '#1C89B7',
-            secondaryBackgroundColor: '#488bf8',
-            primaryBorderColor: "'#488bf8'"
+            primary: '#1C89B7',
+            secondary: '#488bf8',
         },
     },
     brand2: {
-        primaryColor: '#b21010',
-        secondaryColor: '#1C89B7',
+        primary: '#1C89B7',
+        secondary: '#488bf8',
         text: {
-            primaryColor: '#ffffff',
+            primary: '#EEEEEE',
+            secondary: '#FFFFFF',
         },
         button: {
-            primaryColor: '#ffffff',
-            primaryBackgroundColor: '#1C89B7',
-            secondaryBackgroundColor: '#488bf8',
-            primaryBorderColor: "'#488bf8'"
+            primary: '#1C89B7',
+            secondary: '#488bf8',
         },
     }
 };
